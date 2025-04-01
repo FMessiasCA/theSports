@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+
+    --bg-color: #0F172A;
+    --stroke-color: #1E293B;
+
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;
+
+    /* typography */
+    --font-family: "Archivo", sans-serif;
+    font-size: 62.5%;
+
+    --brand-name: 2.4rem "Archivo Black", sans-serif;
+    --h1: 800 2.4rem/135% var(--font-family);
+    --h2: 800 1.6rem/140% var(--font-family);
+    --h3: 800 1.4rem/140% var(--font-family);
+
+    --text-span: 600 1.4rem/145% var(--font-family);
+    --text: 1.4rem/160% var(--font-family);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    font: var(--text); 
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+}
+
+h3 {
+    font: var(--h3);
+}
+
+span {
+    font: var(--text-span);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}

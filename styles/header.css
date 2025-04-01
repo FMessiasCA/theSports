@@ -1,0 +1,39 @@
+#navigation-primary {
+    padding-block: 2rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+
+    div:nth-child(1) {
+        justify-self: start;
+    }
+
+    div:nth-child(2) {
+        font: var(--brand-name);
+        color: var(--brand-color-light);
+
+        text-transform: uppercase;
+        
+        margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+
+    div:has(i):hover {
+        color: var(--brand-color-light);
+    }
+
+}
+
+#navigation-secondary {
+    justify-content: space-between;
+    font: var(--text-span);
+    padding-block: 1.4rem;
+    border-block: 1px solid var(--stroke-color);
+}
