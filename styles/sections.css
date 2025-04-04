@@ -1,0 +1,36 @@
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 50% 0 0;
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            #020617 100%
+        );
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: 0;
+
+        padding: 2.4rem;
+
+        &:has(.text-lg) {
+            padding: 1.2rem;
+        }
+
+        h2 {
+            margin-top: 0.8rem;
+        }
+    }
+}
