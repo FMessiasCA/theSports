@@ -1,9 +1,34 @@
-img {
+section {
+    header {
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--stroke-color);
+
+        a {
+            justify-self: right;
+
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+    }
+
+    figure h2,
+    figure p {
+        overflow: hidden;
+        display: -webkit-box;
+        /* display 2 lines only */
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+main img {
     height: 100%;
     object-fit: cover;
 }
 
-.card {
+#featured .card {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -12,11 +37,9 @@ img {
         content: '';
         position: absolute;
         inset: 50% 0 0;
-        background: linear-gradient(
-            180deg,
-            transparent 0%,
-            #020617 100%
-        );
+        background: linear-gradient(180deg,
+                transparent 0%,
+                #020617 100%);
     }
 
     figcaption {
@@ -31,6 +54,16 @@ img {
 
         h2 {
             margin-top: 0.8rem;
+        }
+    }
+}
+
+#weekly {
+    figure {
+        padding-block: 2.4rem;
+
+        img {
+            height: 16rem;
         }
     }
 }
