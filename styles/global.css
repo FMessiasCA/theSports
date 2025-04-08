@@ -26,7 +26,6 @@
 
     --text-span: 600 1.4rem/145% var(--font-family);
     --text: 1.4rem/160% var(--font-family);
-    --text-sm: 400 14px/160% var(--font-family);
 }
 
 body {

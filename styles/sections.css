@@ -20,11 +20,11 @@ section {
         }
     }
 
-    figure h2,
+    h2,
     p {
         overflow: hidden;
         display: -webkit-box;
-        /* display 2 lines only */
+        /* display 3 lines only */
         -webkit-line-clamp: 3;
         line-clamp: 3;
         -webkit-box-orient: vertical;
@@ -82,9 +82,17 @@ section {
     #ia {
         .highlight {
             grid-template-columns: 1fr 17.6rem;
+            align-items: center;
 
             h2 {
                 margin-block: 0.8rem .4rem;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+            }
+
+            p {
+                -webkit-line-clamp: 4;
+                line-clamp: 4;
             }
         }
     }
@@ -95,6 +103,16 @@ aside {
     flex-direction: column;
 }
 
-#more {
-    
+#more #latest > div {
+    grid-template-columns: 7.2rem 1fr;
+    align-items: center;
+    gap: 1.5rem;
+
+    p {
+        line-height: 140%;
+        font: var(--text-span);
+
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
 }
