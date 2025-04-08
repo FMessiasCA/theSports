@@ -1,19 +1,27 @@
+main {
+    padding-block: 4rem 8rem;
+}
+
 section {
     header {
         padding-top: 1.2rem;
         border-top: 1px solid var(--stroke-color);
 
-        a {
-            justify-self: right;
+        h3 {
+            font: var(--h3);
+        }
 
-            display: flex;
+        a {
+            display: grid;
+            grid-auto-flow: column;
+            justify-self: end;
             align-items: center;
             gap: 0.8rem;
         }
     }
 
     figure h2,
-    figure p {
+    p {
         overflow: hidden;
         display: -webkit-box;
         /* display 2 lines only */
@@ -21,11 +29,6 @@ section {
         line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-}
-
-main img {
-    height: 100%;
-    object-fit: cover;
 }
 
 #featured .card {
@@ -66,4 +69,32 @@ main img {
             height: 16rem;
         }
     }
+}
+
+#highlights {
+    grid-template-columns: 3fr 2fr;
+    gap: 3.2rem;
+
+    header {
+        margin-bottom: 2.4rem;
+    }
+
+    #ia {
+        .highlight {
+            grid-template-columns: 1fr 17.6rem;
+
+            h2 {
+                margin-block: 0.8rem .4rem;
+            }
+        }
+    }
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+#more {
+    
 }

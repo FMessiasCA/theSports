@@ -10,12 +10,16 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.gap-16 {
-    gap: 1.6rem;
+.gap-80 {
+    gap: 8rem;
 }
 
-.gap-8 {
-    gap: 8rem;
+.gap-32 {
+    gap: 3.2rem;
+}
+
+.gap-16 {
+    gap: 1.6rem;
 }
 
 .text-2xl {
