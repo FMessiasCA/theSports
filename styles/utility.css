@@ -10,8 +10,8 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.gap-80 {
-    gap: 8rem;
+.gap-64 {
+    gap: 6.4rem;
 }
 
 .gap-32 {
